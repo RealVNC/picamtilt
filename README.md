@@ -3,6 +3,9 @@
 A UI for controlling a pan-tilt unit with a mounted Raspberry Pi camera, 
 overlayed with the camera preview image.
 
+<img src="hardware.jpg" width="320">
+<img src="screenshot.jpg" width="320">
+
 Written in Python, using Tkinter for the UI and the picamera Python module
 to control the Raspberry Pi camera preview.
 
