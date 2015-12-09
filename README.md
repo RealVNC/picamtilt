@@ -7,7 +7,9 @@ Written in Python, using Tkinter for the UI and the picamera Python module
 to control the Raspberry Pi camera preview.
 
 Run the program from the repo directory, via sudo:
-    $ sudo python picamtilt.py
+```bash
+$ sudo python picamtilt.py
+```
 
 The program creates a full-screen window, with cross-hairs and a blue circle 
 showing the current camera position. The Raspberry Pi camera preview is shown 
@@ -34,15 +36,15 @@ The following instructions detail how to build the complete system:
 - Official Raspberry Pi camera 
 You could also use the PI NOIR camera if you want to do infra-red.
 
-- Pan+tilt unit with servos and camera mount, from 4tronix:
-http://4tronix.co.uk/store/index.php?rt=product/product&keyword=tilt&category_id=0&product_id=435
+- [Pan+tilt unit](http://4tronix.co.uk/store/index.php?rt=product/product&keyword=tilt&category_id=0&product_id=435) with servos and camera mount, from 4tronix
+
 
 - Long camera cable (30cm or more)
 The standard cable supplied with the Raspberry Pi camera is too short when used
 with the Pan+tilt unit.
 
-- PWM/servo hat for Raspberry Pi, from Adafruit:
-http://www.adafruit.com/products/2327
+- [PWM/servo hat](http://www.adafruit.com/products/2327) for Raspberry Pi, from Adafruit
+
 
 - A Raspberry Pi
 Any model except the Pi Zero (since it has no camera connector), but preferably 
@@ -66,12 +68,11 @@ there is plenty of room for adding extra functionality!
 ### Powering the servos
 
 You should also use a separate power supply for the servos, since it is not 
-recommended to power them off the same supply as the Pi. The following battery
-box with 3 AA batteries is suitable:
-http://www.maplin.co.uk/p/3-aa-battery-box-yr61r
-Plus a PP3 battery clip connector, which can be wired to the screw terminals on 
-the PWM hat (also observing the polarity!). Using standard alkaline AA batteries,
-this provides a 4.5v supply to the servos.
+recommended to power them off the same supply as the Pi. This [3 AA battery box](http://www.maplin.co.uk/p/3-aa-battery-box-yr61r) from Maplin is suitable.
+Plus a [PP3 battery clip connector](http://www.maplin.co.uk/p/pp3-snap-battery-clip-hf28f), 
+which can be wired to the screw terminals on the PWM hat (also observing the 
+polarity!). Using standard alkaline AA batteries, this provides a 4.5v supply
+to the servos.
 
 ### Case
 
@@ -89,20 +90,25 @@ licensed under the [Creative Commons - Attribution - Share Alike license](http:/
 ## Software
 
 - Install the python package for controlling the Pi camera
-    $ sudo apt-get install python-picamera
- 
+```bash
+$ sudo apt-get install python-picamera
+```
+
 - Install the python Tkinter UI library: 
-    $ sudo apt-get install python-tk
+```bash
+$ sudo apt-get install python-tk
+```
 
 - Follow the [Adafruit tutorial](https://learn.adafruit.com/adafruit-16-channel-pwm-servo-hat-for-raspberry-pi/) 
 to setup the PWM hat and install the software.
 
 - Clone this repo and copy in the required files from the Adafruit-Raspberry-Pi-Python-Code
 installation directory, e.g. (assuming you installed it under your home directory):
-    $ git clone <this-repo-url>
-    $ cd picamtilt
-    $ cp ~/Adafruit-Raspberry-Pi-Python-Code/Adafruit_PWM_Servo_Driver/Adafruit_PWM_Servo_Driver.* .
-    $ cp ~/Adafruit-Raspberry-Pi-Python-Code/Adafruit_I2C/Adafruit_I2C.* .
-
+```bash
+$ git clone https://github.com/RealVNC/picamtilt.git
+$ cd picamtilt
+$ cp ~/Adafruit-Raspberry-Pi-Python-Code/Adafruit_PWM_Servo_Driver/Adafruit_PWM_Servo_Driver.* .
+$ cp ~/Adafruit-Raspberry-Pi-Python-Code/Adafruit_I2C/Adafruit_I2C.* .
+```
 
 Copyright (C) 2015 RealVNC Limited. All rights reserved.
