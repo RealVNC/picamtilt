@@ -29,6 +29,7 @@ This was written to provide a demonstration of RealVNC's
 [VNC Server for Raspberry Pi](https://www.realvnc.com/products/vnc/raspberrypi/) 
 at the [PiWars](http://piwars.org/) event in December 2015.
 
+**Update [2016-05-04]** There is now an [Alpha version of VNC Server](https://github.com/RealVNC/raspi-preview) available for the Raspberry Pi which allows you to view the entire display output, including the GPU overlays used by the camera preview and Minecraft. You will need this version in order to view the camera image remotely.
 
 The following instructions detail how to build the complete system:
 
