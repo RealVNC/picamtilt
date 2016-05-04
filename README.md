@@ -29,7 +29,9 @@ This was written to provide a demonstration of RealVNC's
 [VNC Server for Raspberry Pi](https://www.realvnc.com/products/vnc/raspberrypi/) 
 at the [PiWars](http://piwars.org/) event in December 2015.
 
-**Update [2016-05-04]** There is now an [Alpha version of VNC Server](https://github.com/RealVNC/raspi-preview) available for the Raspberry Pi which allows you to view the entire display output, including the GPU overlays used by the camera preview and Minecraft. You will need this version in order to view the camera image remotely.
+**Update [2016-05-04]**: There is now an [Alpha version of VNC Server](https://github.com/RealVNC/raspi-preview) available for the Raspberry Pi which allows you to view the entire display output, including the GPU overlays used by the camera preview and Minecraft. You will need this version in order to view the camera image remotely.
+
+---
 
 The following instructions detail how to build the complete system:
 
@@ -114,5 +116,7 @@ $ cd picamtilt
 $ cp ~/Adafruit-Raspberry-Pi-Python-Code/Adafruit_PWM_Servo_Driver/Adafruit_PWM_Servo_Driver.* .
 $ cp ~/Adafruit-Raspberry-Pi-Python-Code/Adafruit_I2C/Adafruit_I2C.* .
 ```
+
+- Install the [Alpha version of VNC Server](https://github.com/RealVNC/raspi-preview) for Raspberry Pi, following the instructions to have it start on boot. This will allow you to view and control the camera remotely using a VNC Viewer (available for [desktop platforms](http://www.realvnc.com/download/viewer/) as well as [iOS](http://www.realvnc.com/products/ios/), [Android](http://www.realvnc.com/products/android/) and [Chrome](http://www.realvnc.com/products/chrome/)).
 
 Copyright (C) 2015 RealVNC Limited. All rights reserved.
